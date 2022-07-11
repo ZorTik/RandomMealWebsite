@@ -1,0 +1,21 @@
+.footer {
+    padding: 15px 80px 15px 80px;
+    background-color: #a9996c;
+    text-align: center;
+}
+.footer h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer h2, .footer h3 {
+    margin: 0;
+}
+.footer h3 {
+    font-size: 18px;
+}
+.footer h3 span {
+    background-color: #b2a579;
+    border-radius: 5px;
+    padding: 0 5px;
+    color: #504462;
+}

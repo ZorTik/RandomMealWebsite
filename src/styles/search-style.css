@@ -1,5 +1,13 @@
+.search-container {
+    padding-bottom: 20px;
+    background-size: contain;
+}
+.search-welcome-bg {
+    background-image: url("https://cdn.pixabay.com/photo/2017/01/12/02/34/coffee-1973549_960_720.jpg");
+}
 .search-welcome {
     padding: 50px 0 50px 0;
+    background: linear-gradient(120deg, #383020 0%, #383020 35%, #211d12e8 20%);
 }
 .search-welcome h2 {
     font-size: 18px;
@@ -36,7 +44,7 @@
 }
 
 .search-module {
-    max-width: 600px;
+    max-width: 1000px;
     align-self: center;
 }
 
@@ -75,7 +83,29 @@
     padding: 15px;
 }
 
+.recipe-body {
+    padding-top: 50px !important;
+}
+
 .recipe-body h2 {
     font-size: 24px !important;
     color: #947a51 !important;
+}
+
+.recipe-card-empty {
+    background: linear-gradient(to right, #0a0906, #0e0d09, #0a0906);
+    min-height: 150px;
+}
+
+.recipe-preview-body button {
+    margin: 10px 0;
+    max-width: 80%;
+    border-radius: 0;
+    background-color: #b5705e;
+    border: 0;
+    border-bottom: 2px solid #98604f;
+}
+.recipe-preview-body button:hover {
+    background-color: #915a4b;
+    border-bottom: 2px solid #754a3d;
 }

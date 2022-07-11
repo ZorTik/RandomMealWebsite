@@ -7,8 +7,10 @@ import AppHeader from "./components/header";
 
 import "./App.css";
 import AppSearch from "./components/search";
+import {useCookies} from "react-cookie";
 
 function App() {
+    const [cookies, setCookie] = useCookies();
   return (
       <Container fluid className={"App"}>
           <Routes>
