@@ -1,25 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Container} from "react-bootstrap";
+import AppFooter from "./components/footer";
+import {Route, Routes} from "react-router-dom";
+import NotFound from "./components/not-found";
+import AppHeader from "./components/header";
+
+import "./App.css";
+import AppSearch from "./components/search";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Container fluid className={"App"}>
+          <Routes>
+              <Route path="/" element={<AppSearch />}></Route>
+              <Route path="*" element={<NotFound />} />
+          </Routes>
+          <AppFooter />
+      </Container>
   );
 }
 
